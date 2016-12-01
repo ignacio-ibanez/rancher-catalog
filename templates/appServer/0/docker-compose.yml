@@ -1,0 +1,16 @@
+version: '2'
+services:
+  appServer:
+    image: alpine
+    environment:
+      A1: ${param1}
+      A2: ${param2}
+      A3: ${param3}
+      A4: ${param4}
+    stdin_open: true
+    entrypoint:
+    - sh
+    - -c
+    - echo $$A1 $$A2 $$A3 $$A4; sleep 10000
+    tty: true
+

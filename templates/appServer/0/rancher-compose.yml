@@ -1,0 +1,28 @@
+version: '2'
+services:
+  appServer:
+    scale: 1
+
+.catalog:
+  version: "1.0.0"
+  questions:
+    - variable: param1
+      label: "param1"
+      type: "string"
+      required: false
+      default: "hola"
+    - variable: param2
+      label: "param2"
+      type: "string"
+      required: false
+      default: "hola2"
+    - variable: param3
+      label: "param3"
+      type: "string"
+      required: false
+      default: "hola3"
+    - variable: param4
+      label: "param4"
+      type: "string"
+      required: false
+      default: "hola4"  
